@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tom - Portfolio</title>
+    <script>
+        function openMenu() {
+            let nav = document.querySelector("nav")
+            nav.classList.toggle("open")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+<div id="container">
+    <!-- Le header qui contient notre entête de site (logo nav ect) -->
+    <header>
+        <nav>
+            <!-- id = unique = 1 seul par page -->
+            <div id="logo"><img class="logoo"
+                    src="https://cdn.discordapp.com/attachments/1157209568493961237/1158378323718713344/CARPENTIER_TOM_BLASON.png?ex=651eaa62&is=651d58e2&hm=5fd79edf7d6ed51acbfdeb0e44d3a4473b30bae791c292cec6fdbbfa51f51e92&">
+            </div>
+            <i onclick="openMenu()" class="fa-solid fa-bars fa-2xl"></i>
+            <!-- <i class="fa-regular fa-xmark"></i> -->
+            <ul class="liste">
+                <!-- plusieurs classes possibles  -->
+                <li>
+                    <a class="liens" onclick="openMenu()" href="#">À propos</a>
+                </li>
+                <li>
+                    <a class="liens" onclick="openMenu()" href="#">Expériences</a>
+                </li>
+                <li>
+                    <a class="liens" onclick="openMenu()" href="#projets">Projets</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenu principal changeant à chaque page -->
+    <main>
+        <section id="a-propos">À propos</section>
+        <section id="experience">Expériences</section>
+        <section id="projets">Projets</section>
+    </main>
+    <!-- Le pied de la page  -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Coordonnées</h3>
+                <p>Téléphone : 06 27 42 18 15</p>
+                <p>Email : tomcarpentier06@gmail.com</p>
+            </div>
+
+            <div class="footer-social">
+                <h3>Suis-moi</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</html>
