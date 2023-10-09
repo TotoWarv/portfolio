@@ -141,7 +141,7 @@ footer {
   border-style: solid;
   /* border-width: 2px; */
   /* border-color: #ff0000; */
-  padding: 10px;
+  /* padding: 10px;  */
 }
 
 /* appel par id  */
@@ -179,6 +179,8 @@ header > nav > ul.liste {
 
 header > nav > i.fa-bars {
   display: none;
+  position: relative;
+  left: -5%;
 }
 
 section {
@@ -186,7 +188,7 @@ section {
 }
 
 .liens {
-  color: rgb(0, 0, 0);
+  color: rgb(251, 251, 251);
   font-weight: bold;
   /* background: #50006c; */
   padding: 13px 18px;
@@ -195,12 +197,15 @@ section {
 }
 
 .liens:hover {
-  background: #2800363d;
+  background: #6161613d;
 }
 
+/* Configuration CSS de mes boxs  */
 #a-propos,
 #experience,
+#contact,
 #projets {
+  margin: 5px;
   border: solid 2px;
 }
 
@@ -214,6 +219,29 @@ section {
 
 #projets {
   background: #ffe45e;
+}
+
+#contact {
+  background: #7fc8f8;
+}
+
+#a-propos > div.moi > div.apropos > h1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+#a-propos > div.moi > div.apropos {
+  background: red;
+  position: absolute;
+  left: 5%;
+  top: 300px;
+  width: 80%;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* media query  */
@@ -238,6 +266,12 @@ section {
     background: #000000e0;
     top: 0;
     left: 0;
+  }
+
+  header > nav.open > i.fa-bars {
+    position: relative;
+    left: 35%;
+    color: white;
   }
 
   header > nav.open > ul.liste {
